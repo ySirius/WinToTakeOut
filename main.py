@@ -72,12 +72,12 @@ randomNum = random.randint(1, len(randomList))
 print(datetime.now().strftime('%Y/%m/%d %H:%M:%S') + " : " + randomList[randomNum])
 
 # 写入记录
-for a in 历史记录.keys():
-  if (a == randomList[randomNum]):
-    历史记录[a] = 历史记录[a] +1
+# for a in 历史记录.keys():
+#   if (a == randomList[randomNum]):
+#     历史记录[a] = 历史记录[a] +1
 
-with open(filename, "w+", encoding='utf-8') as fp:
-    json.dump(历史记录, fp, ensure_ascii=False)
+# with open(filename, "w+", encoding='utf-8') as fp:
+#     json.dump(历史记录, fp, ensure_ascii=False)
     
   
 
